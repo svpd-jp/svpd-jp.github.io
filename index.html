@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVPDサークル 新入生歓迎！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'M PLUS Rounded 1c', sans-serif;
+        }
+        .hero-section {
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .bubble {
+            position: relative;
+            background: #ffffff;
+            border-radius: .4em;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .bubble:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border: 20px solid transparent;
+            border-top-color: #ffffff;
+            border-bottom: 0;
+            margin-left: -20px;
+            margin-bottom: -20px;
+        }
+        .price-tag {
+            position: relative;
+            background: #ffdd57;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 800;
+            font-size: 1.5rem;
+            transform: rotate(-3deg);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .price-tag::before {
+            content: '';
+            position: absolute;
+            left: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            border-radius: 50%;
+            border: 5px solid #ffdd57;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- ヒーローセクション -->
+    <header class="hero-section text-white text-center py-20 px-4">
+        <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight shadow-text">君の「好き」を、カタチにしよう！</h1>
+        <p class="text-lg md:text-2xl font-bold mb-8">PC一台で、キミもクリエイターに✨</p>
+        <p class="max-w-3xl mx-auto text-base md:text-lg">東海大学SVPDは、ボカロやCeVIOなど「合成音声」を使ったコンテンツを作るクリエイターサークルです！</p>
+    </header>
+
+    <main class="container mx-auto p-6 md:p-12">
+
+        <!-- こんなキミにオススメ！ -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">🎧 こんなキミにピッタリ！</h2>
+            <div class="grid md:grid-cols-3 gap-6 text-center">
+                <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                    <p class="text-5xl mb-4">🎶</p>
+                    <h3 class="font-bold text-lg">音楽や歌が好き！</h3>
+                    <p class="text-sm">ボカロPになってみたい！</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                    <p class="text-5xl mb-4">🎬</p>
+                    <h3 class="font-bold text-lg">動画づくりに興味がある！</h3>
+                    <p class="text-sm">カッコいいMVを作りたい！</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg transform hover:scale-105 transition-transform">
+                    <p class="text-5xl mb-4">🎨</p>
+                    <h3 class="font-bold text-lg">絵やデザインが好き！</h3>
+                    <p class="text-sm">作品の世界観を表現したい！</p>
+                </div>
+            </div>
+            <p class="text-center mt-6 text-gray-600">VTuberや3DCGに興味があるキミも大歓迎！</p>
+        </section>
+
+        <!-- SVPDの魅力 -->
+        <section class="mb-16 bg-sky-100 p-8 rounded-2xl">
+            <h2 class="text-3xl font-bold text-center mb-8">🚀 SVPDのここがスゴイ！</h2>
+            <div class="space-y-8">
+                <!-- ポイント1 -->
+                <div class="md:flex items-center gap-8">
+                    <div class="md:w-1/3 text-center mb-4 md:mb-0">
+                        <img src="https://placehold.co/300x300/81e6d9/ffffff?text=ONLINE" alt="オンライン活動" class="rounded-full mx-auto shadow-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-2 text-sky-700">【Point 1】活動は完全オンライン！</h3>
+                        <p>建学祭などのイベントを除き、活動はすべてオンライン！だから、<strong class="text-rose-500">学業やバイト、推し活との両立も超カンタン。</strong>全国7キャンパスの仲間と、いつでもどこでも繋がれます。兼サーしたい人にもピッタリ！</p>
+                    </div>
+                </div>
+                <!-- ポイント2 -->
+                <div class="md:flex flex-row-reverse items-center gap-8">
+                    <div class="md:w-1/3 text-center mb-4 md:mb-0">
+                        <img src="https://placehold.co/300x300/f6ad55/ffffff?text=WELCOME" alt="初心者歓迎" class="rounded-full mx-auto shadow-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-2 text-orange-700">【Point 2】必要なのはPCと「やる気」だけ！</h3>
+                        <p>「機材がないし…」「ソフトとか難しそう…」そんな心配は無用！<strong class="text-rose-500">必要なのはPCと「やってみたい！」というキモチだけ。</strong>優しい先輩たちが全力でサポートします。もちろん、お試し入会もできるから、まずは気軽に遊びに来てね！</p>
+                    </div>
+                </div>
+                <!-- ポイント3 -->
+                <div class="md:flex items-center gap-8">
+                    <div class="md:w-1/3 text-center mb-4 md:mb-0">
+                        <img src="https://placehold.co/300x300/63b3ed/ffffff?text=EVENT" alt="特別イベント" class="rounded-full mx-auto shadow-lg">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h3 class="text-2xl font-bold mb-2 text-blue-700">【Point 3】新歓は「ニコニコ超会議」！</h3>
+                        <p>SVPDの恒例新歓は、なんとあの<strong class="text-rose-500">「ニコニコ超会議」！</strong>日本のポップカルチャーの最前線をみんなで体感しに行きます。合成音声の世界の奥深さに触れながら、最高の思い出を作ろう！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 入会案内 -->
+        <section class="mb-16 text-center">
+            <h2 class="text-3xl font-bold mb-4">🌸 今がチャンス！新入生入会キャンペーン 🌸</h2>
+            <p class="mb-8 text-lg">サークル活動をもっと気軽に！SVPDは会費割引が充実！</p>
+            <div class="flex justify-center items-center">
+                <div class="bubble p-8 max-w-md w-full">
+                    <p class="text-xl">通常会費 <del>4000円</del> のところ…</p>
+                    <h3 class="text-2xl font-bold my-2 text-rose-600">4月限定！入会早割！</h3>
+                    <div class="my-6 flex justify-center">
+                       <div class="price-tag">
+                           2525円
+                       </div>
+                    </div>
+                    <p class="font-bold text-lg">ニコニコ価格で入会できちゃう！</p>
+                    <p class="text-sm mt-2 text-gray-600">このチャンスを逃さないで！</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Q&A -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">🤔 Q & A</h2>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-bold text-lg">Q. 他のキャンパスからでも参加できますか？</h3>
+                    <p class="pt-2 text-gray-700">A. もちろんです！SVPDは東海大学の全7キャンパスで活動する全学対象サークル。オンラインだからこそ、キャンパスの垣根を越えた交流が活発です！</p>
+                </div>
+                 <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-bold text-lg">Q. 非公認サークルって聞きましたけど、大丈夫ですか？</h3>
+                    <p class="pt-2 text-gray-700">A. ご安心ください！非公認ですが、サークルのルール（定款や規程）をしっかり定めて運営しています。安心して活動に集中できる環境です。</p>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow">
+                    <h3 class="font-bold text-lg">Q. 具体的にどんな活動をしてるの？</h3>
+                    <p class="pt-2 text-gray-700">A. メンバーがそれぞれ「作りたい！」と思ったものを自由に制作しています。作曲、動画編集、イラスト制作、3DCGモデリングなど、分野は様々。完成した作品はみんなで鑑賞会をしたり、SNSで発表したりします！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 最後のメッセージ -->
+        <section class="text-center bg-gray-800 text-white p-12 rounded-2xl">
+            <h2 class="text-3xl font-bold mb-4">さあ、一緒に新しい文化を創ろう！</h2>
+            <p class="max-w-2xl mx-auto mb-8">
+                大学生活、何か新しいことに挑戦してみたいと思いませんか？<br>
+                君の「好き」や「アイデア」が、誰かの心を動かす最高の作品になるかもしれません。<br>
+                SVPDで、最高の仲間と一緒に、忘れられない4年間を始めよう！
+            </p>
+            <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-8 rounded-full text-lg transition-transform transform hover:scale-110 inline-block shadow-lg">
+                お試し入会・お問い合わせはこちらから！
+            </a>
+        </section>
+    </main>
+
+    <footer class="text-center p-6 bg-gray-200 text-sm text-gray-600">
+        <p>SVPD - Synthetic Voice Production Domain</p>
+        <p>合成音声制作普及サークル/SVPDグループ</p>
+    </footer>
+
+</body>
+</html>
